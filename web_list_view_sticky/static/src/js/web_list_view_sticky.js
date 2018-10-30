@@ -1,9 +1,8 @@
-odoo.define('web.FreezeTableHeader',function (require) {
+odoo.define('web.FreezeTableHeader', function (require) {
     "use strict";
 
     var core = require('web.core');
     var ListView = require('web.ListView');
-
     var _t = core._t;
 
     var FreezeTableHeader = ListView.include({
@@ -17,10 +16,8 @@ odoo.define('web.FreezeTableHeader',function (require) {
                         $(this).stickyTableHeaders({scrollableArea: scrollArea, leftOffset: scrollArea, "fixedOffset": 1 })
                     });
                 }
-         }, 1000);
-            
+            }, 1000);
         },
     });
-
 });
 
