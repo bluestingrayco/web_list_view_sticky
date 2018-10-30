@@ -162,7 +162,7 @@
 							'z-index': 2 // #18: opacity bug
 						});
 						base.leftOffset = newLeft;
-						base.topOffset = newTopOffset;
+						base.topOffset = newTopOffset ? base.options.topOffset : isNaN(base.options.topOffset);
 						base.$clonedHeader.css('display', '');
 						if (!base.isSticky) {
 							base.isSticky = true;
